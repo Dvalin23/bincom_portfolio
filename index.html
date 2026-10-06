@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbdulAzeez Ahmad Ayoola | Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #18bc9c;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        section {
+            padding: 80px 20px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        #home {
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        #home p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .resume-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .resume-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1px));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .gallery img:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 id="greeting">AbdulAzeez Ahmad Ayoola</h1>
+        <p>Full-Stack Software Engineer & Mechatronics Specialist</p>
+        <p>Bridging the gap between embedded hardware systems and dynamic web applications. Proficient in web development, microcontrollers, and engineering leadership.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="resume-item">
+            <h3>Executive Director</h3>
+            <p><strong>Robotics and Artificial Intelligence Nigeria (RAIN)</strong> | 2026 - Present</p>
+            <ul>
+                <li>Directing organizational initiatives at the intersection of robotics and AI.</li>
+                <li>Overseeing technical project development and engineering training programs.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="resume-item">
+            <h3>B.Eng. Mechatronics Engineering</h3>
+            <p><strong>Federal University of Technology, Minna</strong> | 2026/2027 Session</p>
+            <p>Focus areas: Control systems, robotic kinematics, embedded C/C++, and advanced physics (electrostatics, wave mechanics, circuit analysis).</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Technical Skills & Projects</h2>
+        <div class="resume-item">
+            <h3>Core Competencies</h3>
+            <div class="skills-list">
+                <span class="skill-tag">JavaScript (ES6+)</span>
+                <span class="skill-tag">HTML5 & CSS3</span>
+                <span class="skill-tag">Node.js & Express</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">ASP.NET</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Arduino (Nano/Uno)</span>
+                <span class="skill-tag">ESP8266 & ESP32</span>
+            </div>
+        </div>
+        
+        <div class="resume-item">
+            <h3>Notable Hardware Implementations</h3>
+            <ul>
+                <li><strong>Automated Irrigation System:</strong> Engineered soil moisture relay switching systems using Arduino Nano and ESP32.</li>
+                <li><strong>Tank Volume Monitoring:</strong> Programmed ultrasonic sensors for real-time tank level percentage calculations.</li>
+                <li><strong>Peltier Cooling Assembly:</strong> Designed a purely hardware-based thermoelectric cooling loop featuring dual heat sinks and DC fans without a microcontroller.</li>
+                <li><strong>Ackermann Steering Chassis:</strong> Calculated steering ratios and physical kinematics for a custom robot car.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Photo Gallery (Friends & Me)</h2>
+        <p>Click on an image to see an interactive JavaScript alert.</p>
+        <div class="gallery">
+            <img src="IMG-20260320-WA0022.jpg" alt="Friends Photo 1" class="gallery-img">
+            <img src="IMG-20260320-WA0026.jpg" alt="Friends Photo 2" class="gallery-img">
+            <img src="IMG-20260527-WA0014.jpg" alt="Friends Photo 3" class="gallery-img">
+            <img src="Snapchat-2057371546.jpg" alt="Solo Photo 1" class="gallery-img">
+            <img src="1791274506242.jpg" alt="Solo Photo 2" class="gallery-img">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AbdulAzeez Ahmad Ayoola. Developed for Bincom Internship Test.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                window.scrollTo({
+                    top: targetSection.offsetTop - 60,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.onload = () => {
+            const hour = new Date().getHours();
+            const greetingElement = document.getElementById('greeting');
+            const originalText = greetingElement.innerText;
+            
+            let timeGreeting = 'Good Evening';
+            if (hour < 12) timeGreeting = 'Good Morning';
+            else if (hour < 18) timeGreeting = 'Good Afternoon';
+
+            greetingElement.innerText = `${timeGreeting}, I'm ${originalText}`;
+        };
+
+        const images = document.querySelectorAll('.gallery-img');
+        images.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                alert(`Viewing image ${index + 1} from my personal gallery!`);
+            });
+        });
+    </script>
+</body>
+</html>
